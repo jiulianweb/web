@@ -1,0 +1,48 @@
+<view class="content">
+  <view class="title">
+    <text>设置时间</text>
+  </view>
+  <view class="tip">请告诉其他朋友，你的空闲时间</view>
+  <view class="timeMain">
+    <!-- <view class="select">
+      <view class="section__title">选择日期</view>
+      <picker
+        mode="date"
+        value="{{date}}"
+        start="2015-09-01"
+        end="2017-09-01"
+        bindchange="bindDateChange"
+      >
+        <view class="picker">{{date}}</view>
+      </picker>
+    </view> -->
+    <view class="timeItem">
+      <view class="select">
+      <view class="section__title">选择时间</view>
+        <picker
+          mode="time"
+          value="{{time1}}"
+          data-type="time1"
+          start="{{time2}}"
+          bindchange="bindTimeChange"
+        >
+          <view class="picker">{{time1}}</view>
+        </picker>
+        <view class="middle">-</view>
+        <picker
+          mode="time"
+          value="{{time2}}"
+          data-type="time2"
+          start="{{time1}}"
+          bindchange="bindTimeChange"
+        >
+          <view class="picker">{{time2}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="operate">
+    <view class="button" 
+    bindtap="clickAppoint">相聚啦</view>
+  </view>
+</view>

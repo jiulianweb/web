@@ -1,0 +1,11 @@
+<!--pages/matchingSuccess/matchingSuccess.wxml-->
+<view>
+  <view class="logoMain">
+    <image src="../../images/success_icon.png"></image>
+  </view>
+  <view class="textMain">
+    <view>匹配成功</view>
+    <view>女生可以开始挑选约会地点及菜品啦！</view>
+  </view>
+  <view class="operate" bindtap="goPage">去选择</view>
+</view>

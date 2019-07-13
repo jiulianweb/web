@@ -1,0 +1,109 @@
+page {
+  width: 100%;
+	height:auto;
+	background:#F5F5F5;
+}
+.backSugges {
+  width: 100%;
+  margin-top: 20rpx;
+  background: #FFFFFF;
+  padding-bottom: 54rpx;
+  overflow: hidden;
+}
+.marginAuto {
+  width: 674rpx;
+  margin: 0 auto;
+}
+.title {
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 30rpx;
+  margin-bottom: 38rpx;
+  font-size: 28rpx;
+  color: #101010;
+  font-family: "SourceHanSansSC-regular";
+}
+.labelType {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 54rpx;
+}
+.labelType view {
+  width: 120rpx;
+  height: 44rpx;
+  line-height: 46rpx;
+  border: 2rpx solid #E1E1E1;
+  border-radius: 6rpx;
+  margin-right: 22rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #797A7B;
+  font-family: "SourceHanSansSC-regular";
+}
+.labelType view:last-child {
+  margin-right: 0rpx;
+}
+.labelType .active {
+  border: 2rpx solid #FFCAD6;
+  color: #EF738E;
+  background: #FFF6F8;
+}
+.line {
+  width: 100%;
+  height: 2rpx;
+  background: #F5F5F5;
+}
+.counttitle {
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 42rpx;
+  margin-bottom: 16rpx;
+  font-size: 28rpx;
+  color: #101010;
+  font-family: "SourceHanSansSC-regular";
+}
+.marginAuto textarea {
+  width: 100%;
+  padding-top: 10rpx;
+  height: 142rpx;
+  color: #D5D5D5;
+  font-size: 28rpx;
+  font-family: "SourceHanSansSC-regular"
+}
+.marginAuto .tips {
+  margin-top: 20rpx;
+  color: #D5D5D5;
+  font-size: 28rpx;
+  font-family: "SourceHanSansSC-regular"
+}
+.marginAuto textarea::placeholder {
+  color: #D5D5D5;
+  font-size: 28rpx;
+  font-family: "SourceHanSansSC-regular"
+}
+.imgBox {
+  width: 100%;
+  overflow: hidden;
+}
+.imgBox image {
+  width: 164rpx;
+  height: 164rpx;
+  border-radius: 6rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+}
+.submit {
+  width: 676rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 60rpx;
+  background: #EF738E;
+  font-size: 32rpx;
+  color: #FFF;
+  font-family: "SourceHanSansSC-regular";
+  margin-top: 200rpx;
+}

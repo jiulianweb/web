@@ -1,0 +1,110 @@
+<view class="meetBa">
+  <view class="marginAuto" wx:if="{{status}}">
+    <view class="count">
+      <view>
+        <view class="userBase">
+          <view class="FL userHead">
+            <image 
+            wx:if="{{meetBaDetail.info.sex == 1 && !meetBaDetail.info.headimgurl}}" 
+            src="../../images/boy_icon.png"></image>
+            <image 
+            wx:if="{{meetBaDetail.info.sex == 2 && !meetBaDetail.info.headimgurl}}"
+            src="../../images/girl_iconed.png"></image>
+            <image 
+            wx:if="{{meetBaDetail.info.headimgurl}}" 
+            src="{{meetBaDetail.info.headimgurl}}"></image>
+          </view>
+          <view class="FL userInfo">
+            <view class="userName">{{meetBaDetail.info.name}}</view>
+            <!--男用boy女用girl-->
+            <view class="userSex {{meetBaDetail.info.sex == 1 ? 'boy' : 'gril'}}">
+              <image wx:if="{{meetBaDetail.info.sex == 1}}" src="../../images/nan.png"></image>
+              <image wx:if="{{meetBaDetail.info.sex == 2}}" src="../../images/nv.png"></image>
+              <text>{{meetBaDetail.info.age}}</text>
+            </view>
+          </view>
+        </view>
+        <view class="magess"><text>{{meetBaDetail.info.content}}</text></view>
+        <view class="imageBox">
+          <!--模3等于0的时候添加active-->
+          <image
+          wx:if="{{meetBaDetail.info.pics.length > 0}}"
+          wx:for="{{meetBaDetail.info.pics}}"
+          wx:for-index="index"
+          wx:for-item="item"
+          wx:key="item"
+          src="{{item}}"
+          class="{{(index+1)%3 == 0 ? 'active' : ''}}"></image>
+        </view>
+        <view class="schoolAdress">
+          <image src="../../images/adressed.png"></image>
+          <text>{{meetBaDetail.info.school}}</text>
+        </view>
+      </view>
+      <view class="clickZanPL">
+        <view class="FL zan" data-type="0" bindtap="clickLive">
+          <image wx:if="{{!meetBaDetail.zaned}}" src="../../images/zan.png"></image>
+          <image wx:if="{{meetBaDetail.zaned}}" src="../../images/zaned.png"></image>
+          <text>{{meetBaDetail.zan_num}}</text>
+        </view>
+        <view class="FL pl">
+          <image src="../../images/pl_icon.png"></image>
+          <text>{{meetBaDetail.message_num}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="plBox">
+      <view class="plTitle">最新评论 <text>({{commentList.length}})</text></view>
+      <view class="plInfoBox"
+      wx:for="{{commentList}}"
+      wx:for-index="index"
+      wx:for-item="item"
+      wx:key="item"
+      data-id="{{item.id}}">
+        <view class="FL headerIcon">
+          <image 
+            wx:if="{{item.sex == 1 && !item.headimgurl}}" 
+            src="../../images/boy_icon.png"></image>
+            <image 
+            wx:if="{{item.sex == 2 && !item.headimgurl}}"
+            src="../../images/girl_iconed.png"></image>
+            <image 
+            wx:if="{{item.headimgurl}}" 
+            src="{{item.headimgurl}}"></image>
+        </view>
+        <view class="plcount">
+          <view class="plUserInfo">
+            <view class="FL userName">{{item.name}}</view>
+            <!--男用boy女用girl-->
+            <view class="FL userSex {{item.sex == 1 ? 'boy' : 'gril'}}">
+              <image wx:if="{{item.sex == 1}}" src="../../images/nan.png"></image>
+              <image wx:if="{{item.sex == 2}}" src="../../images/nv.png"></image>
+              <text>{{items.age}}</text>
+            </view>
+            <view 
+            class="FR clickZan" 
+            data-id="{{item.id}}"
+            data-index="{{index}}"
+            data-type="1" 
+            bindtap="clickLive">
+              <image wx:if="{{!item.zaned}}" src="../../images/zan.png"></image>
+              <image wx:if="{{item.zaned}}" src="../../images/zaned.png"></image>
+            </view>
+          </view>
+          <view class="plMessage">{{item.messge}}</view>
+          <view class="plTime">{{item.create_time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="sendPl">
+    <input 
+    type="text" 
+    value="{{count}}"
+    placeholder="发布评论" 
+    confirm-type="send"
+    bindconfirm="bindKeyInput"
+    placeholder-class="placeholder"/>
+    <!-- <image src="../../images/look.png"></image> -->
+  </view>
+</view>

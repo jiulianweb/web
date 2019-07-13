@@ -1,0 +1,353 @@
+page {
+  width: 100%;
+	height:auto;
+	background:#F5F5F5;
+}
+.shopHOme {
+  width: 100%;
+}
+.shopInfoCount {
+  width: 100%;
+  background: #FFFFFF;
+}
+.count {
+  width: 100%;
+  padding-top: 34rpx;
+  padding-bottom: 30rpx;
+  overflow: hidden;
+}
+.count .shopName {
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-left: 38rpx;
+  font-size: 28rpx;
+  color: #222222;
+  font-family: "SourceHanSansSC-regular";
+}
+.count .adress {
+  width: 100%;
+  height: 36rpx;
+  line-height: 36rpx;
+  margin-left: 38rpx;
+  margin-top: 6rpx;
+  font-size: 24rpx;
+  color: #A1A1A1;
+  font-family: "SourceHanSansSC-regular";
+}
+.count .money {
+  width: 100%;
+  height: 30rpx;
+  margin-top: 14rpx;
+  margin-left: 38rpx;
+  font-size: 24rpx;
+  color: #A1A1A1;
+  font-family: "SourceHanSansSC-regular";
+}
+.count .money text:first-child {
+  color: #FF5105;
+}
+.count .money text:last-child {
+  font-size: 36rpx;
+  margin: 0 12rpx 0 6rpx;
+  color: #FF5105;
+}
+/* 隐藏scrollbar */
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.scroll-x{
+  height:174rpx;
+  white-space:nowrap;
+  display:flex;
+  margin-top: 36rpx;
+  margin-bottom: 30rpx;
+}
+.view-parent{
+  display:inline-block;
+  margin-right: 10rpx;
+}
+.view-parent:first-child {
+  margin-left: 38rpx;
+}
+.view-parent:last-child {
+  margin-right: 38rpx;
+}
+.view-item{
+  width: 206rpx;
+  height: 174rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view-parent .view-item image {
+  width: 206rpx;
+  height: 174rpx;
+}
+.count .Icon {
+  width: 100%;
+  height: 36rpx;
+  line-height: 36rpx;
+  overflow: hidden;
+  margin-left: 38rpx;
+  margin-top: 16rpx;
+}
+.count .Icon image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 12rpx;
+  vertical-align: middle;
+}
+.count .Icon text {
+  display: inline-block;
+  font-size: 24rpx;
+  color: #A1A1A1;
+  font-family: "SourceHanSansSC-regular";
+}
+.shopRecom {
+  width: 100%;
+  padding-top: 34rpx;
+  overflow: hidden;
+  padding-bottom: 38rpx;
+  background: #FFFFFF;
+  margin-top: 20rpx;
+}
+.shopRecomTitle {
+  width: 100%;
+  height: 48rpx;
+  line-height: 48rpx;
+  margin-left: 38rpx;
+  margin-bottom: 26rpx;
+  font-size: 32rpx;
+  color: #222222;
+  font-family: "SourceHanSansSC-regular";
+}
+.RecomScroll-x {
+  height:268rpx;
+  white-space:nowrap;
+  display:flex;
+}
+.RecomView-parent {
+  display:inline-block;
+  margin-right: 10rpx;
+}
+.RecomView-parent:first-child {
+  margin-left: 38rpx;
+}
+.RecomView-parent:last-child {
+  margin-right: 38rpx;
+}
+.RecomView-item {
+  position: relative;
+  width: 186rpx;
+  height: 210rpx;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.RecomView-parent .RecomView-item .foodImg {
+  width: 186rpx;
+  height: 210rpx;
+  border-radius: 10rpx;
+}
+.RecomView-parent .RecomView-item .absolute {
+  position: absolute;
+  left: 0rpx;
+  bottom: 0rpx;
+  width: 100%;
+  height: 42rpx;
+  line-height: 42rpx;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 0 0 10rpx 10rpx;
+  background: #000000;
+  opacity: 0.8;
+}
+.RecomView-parent .RecomView-item .absolute image {
+  width: 22rpx;
+  height: 22rpx;
+  vertical-align: middle;
+  margin-top: -4rpx;
+  margin-right: 10rpx;
+}
+.RecomView-parent .RecomView-item .absolute text {
+  vertical-align: middle;
+  font-size: 20rpx;
+  color: #FFFFFF;
+  font-family: "SourceHanSansSC-regular";
+}
+.RecomView-parent .shopName {
+  width: 186rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  margin-top: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 28rpx;
+  color: #101010;
+  font-family: "SourceHanSansSC-regular";
+}
+.shopDan {
+  width: 100%;
+  background: #FFFFFF;
+  margin-top: 20rpx;
+  padding-bottom: 50rpx;
+  overflow: hidden;
+}
+.shopDan .shopDanTitle {
+  width: 166rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  margin-top: 26rpx;
+  margin-left: 38rpx;
+  margin-bottom: 26rpx;
+  font-size: 32rpx;
+  color: #222222;
+  font-family: "SourceHanSansSC-regular";
+}
+.shopDan .shopDan-item {
+  width: 214rpx;
+  min-height: 1136rpx;
+  background: #F5F5F5;
+}
+.shopDan .shopDan-item view {
+  width: 166rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-left: 38rpx;
+  font-size: 28rpx;
+  color: #606060;
+  font-family: "SourceHanSansSC-regular";
+}
+.shopDan .shopDan-item .active {
+  background: #FFFFFF;
+  border-left: 2rpx solid #F3983E;
+}
+.shopDan .shopDanName {
+  color: #606060;
+  margin-left: 10rpx;
+}
+.shopDan .section {
+  width: 536rpx;
+}
+.shopDan .section .scroll-y {
+  width: 100%;
+  height: 1136rpx;
+}
+.scroll-view-item {
+  position: relative;
+  width: 100%;
+  height: 210rpx;
+  margin-bottom: 50rpx;
+  overflow: hidden;
+}
+.scroll-view-item .shopIcon {
+  width: 186rpx;
+  height: 210rpx;
+  border-radius: 10rpx;
+  margin-left: 10rpx;
+  overflow: hidden;
+}
+.scroll-view-item .shopIcon image {
+  width: 186rpx;
+  height: 210rpx;
+  border-radius: 10rpx;
+}
+.scroll-view-item .shopInfo {
+  position: relative;
+  width: 280rpx;
+  height: 210rpx;
+  margin-left: 20rpx;
+  overflow: hidden;
+}
+.scroll-view-item .shopName {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #101010;
+  font-family: "SourceHanSansSC-regular";
+}
+.scroll-view-item .shopPrice {
+  position: absolute;
+  left: 0rpx;
+  bottom: 0rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 36rpx;
+  color: #EE4F34;
+  font-family: "SourceHanSansSC-regular";
+}
+.scroll-view-item .shopPrice text {
+  display: inline-block;
+  margin-right: 8rpx;
+  font-size: 28rpx;
+}
+.scroll-view-item .addShop {
+  position: absolute;
+  top: 0rpx;
+  bottom: 0rpx;
+  right: 100rpx;
+  margin: auto;
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 42rpx;
+  text-align: center;
+  border-radius: 50%;
+  background: #EF738E;
+  font-size: 50rpx;
+  color: #FFFFFF;
+  font-family: "SourceHanSansSC-regular";
+}
+.scroll-view-item .reduceShop {
+  position: absolute;
+  top: 0rpx;
+  bottom: 0rpx;
+  right: 20rpx;
+  margin: auto;
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 42rpx;
+  text-align: center;
+  border-radius: 50%;
+  background: #EF738E;
+  font-size: 50rpx;
+  color: #FFFFFF;
+  font-family: "SourceHanSansSC-regular";
+}
+.submit {
+  width: 100%;
+  height: 90rpx;
+  overflow: hidden;
+  background: #373839;
+}
+.submit .FL {
+  width: 522rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  padding-left: 38rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  font-family: "SourceHanSansSC-regular";
+  background: #373839;
+}
+.submit .FL text {
+  display: inline-block;
+  margin-left: 10rpx;
+  margin-right: 6rpx;
+  font-size: 28rpx;
+}
+.submit .FR {
+  width: 190rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  font-family: "SourceHanSansSC-regular";
+  background: #EF738E;
+}

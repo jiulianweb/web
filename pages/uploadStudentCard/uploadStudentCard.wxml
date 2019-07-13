@@ -1,0 +1,53 @@
+<view class="content">
+  <view class="form">
+    <view class="label">
+      <text>真实姓名</text>
+    </view>
+    <view>
+      <input type="text"
+        placeholder="单行输入"
+        bindinput="bindKeyInput"
+        data-key="name"
+        placeholder-class="defaultClass"/>
+    </view>
+    <view class="label mt10">
+      <text>身份证号码</text>
+    </view>
+    <view>
+      <input type="number"
+        bindinput="bindKeyInput"
+        maxlength="18"
+        data-key="idnumber"
+        placeholder="单行输入"
+        placeholder-class="defaultClass"/>
+    </view>
+  </view>
+  <view class="identityInfo">
+    <view class="tip">上传学生卡正面</view>
+    <view bindtap="uploadSC" data-key="student_id_f">
+      <image src="{{student_id_f}}"></image>
+    </view>
+    <view class="tip">上传学卡反面</view>
+    <view bindtap="uploadSC" data-key="student_id_b">
+      <image src="{{student_id_b}}"></image>
+    </view>
+  </view>
+  <view class="form">
+    <view class="label">
+      <text>手机号码</text>
+    </view>
+    <view>
+      <input type="number"
+        placeholder="单行输入"
+        bindinput="bindKeyInput"
+        data-key="mobile"
+        maxlength="11"
+        placeholder-class="defaultClass"/>
+    </view>
+  </view>
+  <view class="attetips"><text>实名认证信息，信息仅限平台对用户进行身份认证</text></view>
+  <view class="operate">
+    <view class="button"
+    bindtap="clickNext">下一步</view>
+  </view>
+</view>

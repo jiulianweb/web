@@ -1,0 +1,222 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.6",
+	"appid": "wxf3351e801a6e3cac",
+	"projectname": "jiulian",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 24,
+			"list": [
+				{
+					"id": -1,
+					"name": "反馈及建议",
+					"pathName": "pages/backsugges/backsugges",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单信息",
+					"pathName": "pages/orderInfo/orderInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单详情",
+					"pathName": "pages/orderDetail/orderDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "个人信息",
+					"pathName": "pages/userInfo/userInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "主页",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的约会",
+					"pathName": "pages/myMeet/myMeet",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/myCenter/myCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "恋爱吧",
+					"pathName": "pages/meetBa/meetBa",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "约会心情提交页面",
+					"pathName": "pages/meetMood/meetMood",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "恋爱吧详情",
+					"pathName": "pages/meetBaDetail/meetBaDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商家主页",
+					"pathName": "pages/shopHome/shopHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商家推荐",
+					"pathName": "pages/shopRecom/shopRecom",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人主页",
+					"pathName": "pages/homepage/homepage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加信息",
+					"pathName": "pages/addInfo/addInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "设置时间",
+					"pathName": "pages/setupTime/setupTime",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "开始测试",
+					"pathName": "pages/startTest/startTest",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "问卷测试",
+					"pathName": "pages/questionnaireTest/questionnaireTest",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测试结果",
+					"pathName": "pages/testResultPage/testResultPage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "用户推荐",
+					"pathName": "pages/userRecommendation/userRecommendation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "上传学生卡",
+					"pathName": "pages/uploadStudentCard/uploadStudentCard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加信息",
+					"pathName": "pages/addInfo/addInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "实名认证",
+					"pathName": "pages/uploadStudentCard/uploadStudentCard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "用户推荐",
+					"pathName": "pages/userRecommendation/userRecommendation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 23,
+					"name": "个人主页",
+					"pathName": "pages/homepage/homepage",
+					"query": "userId=d4244788301a59ffe1297840530c3305",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商家推荐",
+					"pathName": "pages/shopRecom/shopRecom",
+					"query": "userId=d4244788301a59ffe1297840530c3305",
+					"scene": null
+				}
+			]
+		}
+	}
+}

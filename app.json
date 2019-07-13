@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/uploadStudentCard/uploadStudentCard",
+    "pages/addInfo/addInfo",
+    "pages/setupTime/setupTime",
+    "pages/startTest/startTest",
+    "pages/questionnaireTest/questionnaireTest",
+    "pages/testResultPage/testResultPage",
+    "pages/userRecommendation/userRecommendation",
+    "pages/matchingSuccess/matchingSuccess",
+    "pages/homepage/homepage",
+    "pages/shopRecom/shopRecom",
+    "pages/shopHome/shopHome",
+    "pages/meetBa/meetBa",
+    "pages/meetMood/meetMood",
+    "pages/meetBaDetail/meetBaDetail",
+    "pages/myCenter/myCenter",
+    "pages/myMeet/myMeet",
+    "pages/orderInfo/orderInfo",
+    "pages/orderDetail/orderDetail",
+    "pages/backsugges/backsugges",
+    "pages/userInfo/userInfo",
+    "pages/mysetTIme/mysetTIme"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "啾啾鸟",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle": "black",
+    "selectedColor": "#EF738E",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/userRecommendation/userRecommendation",
+        "text": "用户推荐",
+        "iconPath": "images/commend.png",
+        "selectedIconPath": "images/commended.png"
+      },
+      {
+        "pagePath": "pages/shopRecom/shopRecom",
+        "text": "商家推荐",
+        "iconPath": "images/shop.png",
+        "selectedIconPath": "images/shoped.png"
+      },
+      {
+        "pagePath": "pages/meetBa/meetBa",
+        "text": "恋爱吧",
+        "iconPath": "images/barMeet.png",
+        "selectedIconPath": "images/barMeeted.png"
+      },
+      {
+        "pagePath": "pages/myCenter/myCenter",
+        "text": "我的",
+        "iconPath": "images/mycenter.png",
+        "selectedIconPath": "images/mycentered.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

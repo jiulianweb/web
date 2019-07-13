@@ -1,0 +1,181 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper
+      class="swiper"
+      indicator-dots="{{true}}" 
+      autoplay="{{true}}" 
+      circular="{{true}}"
+      interval="{{interval}}" 
+      duration="{{duration}}" 
+      indicator-color="#fff" 
+      indicator-active-color="#EF738E">
+        <block 
+          wx:for="{{imgUrls}}"
+          wx:key="index">
+          <swiper-item class="swiper-item">
+            <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="detailMsg">
+      <view class="title">
+        <view>{{userInfo.nickname}}</view>
+        <view class="sexYear {{userInfo.sex == 1 ? 'boy' : 'gril'}}">
+          <image wx:if="{{userInfo.sex == 1}}" src="../../images/nan.png"></image>
+          <image wx:if="{{userInfo.sex == 2}}" src="../../images/nv.png"></image>
+          <text>{{userInfo.age}}</text>
+        </view>
+        <view class="share">
+          <!--<text>分享</text>-->
+          <!--<image src="../../images/share_icon.png"></image>-->
+        </view>
+      </view>
+      <view class="addrHeight">
+        <text>{{userInfo.address}}</text>
+        <text>{{userInfo.height}}</text>
+      </view>
+      <view class="freeTime">
+        <text>空闲时间</text>
+        <text>{{userInfo.havetime}}</text>
+      </view>
+      <view class="title mt88rpx">
+        <view>关于我</view>
+      </view>
+
+      <view class="aboutDetail">
+        <view>
+          <image src="../../images/school_icon.png"></image>
+          <text>{{userInfo.school}}</text>
+        </view>
+        <view>
+          <image src="../../images/zhuanye_icon.png"></image>
+          <text>{{userInfo.major}}</text>
+        </view>
+        <view>
+          <image src="../../images/edit_icon.jpg"></image>
+          <text>{{userInfo.aboutme}}</text>
+        </view>
+        <view>
+          <image src="../../images/biaoqian_icon.png"></image>
+          <text>标签（{{tags.length}}）</text>
+        </view>
+      </view>
+      <view class="label">
+        <view  wx:for="{{tags}}"
+               wx:key="index">{{item}}</view>
+      </view>
+      <view class="marginAuto">
+        <view class="title">期待的他/她是</view>
+        <view class="count">{{userInfo.hopeto}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <view bindtap="clickDeug">匹配度</view>
+    <view wx:if="{{isInvitation}}" bindtap="clickInvitation">邀请</view>
+    <view class="finishBtn" wx:if="{{!isInvitation}}">已邀请</view>
+  </view>
+  <view class="option" wx:if="{{status}}"></view>
+  <view class="matchingModel" wx:if="{{matchingModel}}">
+    <view class="close" bindtap="closeMatchingModel">×</view>
+    <view class="headerTitle">
+      <view class="headerIcon Icon1">
+        <image src="../../images/header_icon.png"></image>
+      </view>
+      <view class="headerIcon Icon2">
+        <image src="../../images/header_icon.png"></image>
+      </view>
+      <view class="matchDetal">匹配度<text>91%</text></view>
+    </view>
+    <view class="matchingConut">
+      <view class="matchingConutTit">
+        <image src="../../images/macth_icon.png"></image>
+        <text>人格特质：</text>
+      </view>
+      <view class="const">人格特质是指在组成人格的因素中，能引发人们行
+为和主动引导人的行为，并使个人面对不同种类的
+刺激都能做出相同反映的心理结构。
+      </view>
+      <view class="matchingConutTit">
+        <image src="../../images/macth_icon.png"></image>
+        <text>相处模式：</text>
+      </view>
+      <view class="const">人格特质是指在组成人格的因素中，能引发人们行
+为和主动引导人的行为，并使个人面对不同种类的
+刺激都能做出相同反映的心理结构。
+      </view>
+      <view class="matchingConutTit">
+        <image src="../../images/macth_icon.png"></image>
+        <text>总体来说：</text>
+      </view>
+      <view class="const">人格特质是指在组成人格的因素中，能引发人们行
+为和主动引导人的行为，并使个人面对不同种类的
+刺激都能做出相同反映的心理结构。
+      </view>
+    </view>
+  </view>
+  <view class="invitationBox" wx:if="{{invitationBox}}">
+    <view class="headPhotoIcon">
+      <image src="{{userInfo.headimgurl}}"></image>
+    </view>
+    <view class="inviteCome">您要邀请{{userInfo.nickname}}约会吗？</view>
+    <view class="operateMain">
+      <view class="disagree" bindtap="clickRemove">取消</view>
+      <view class="agree" bindtap="configMathing" data-url="../shopRecom/shopRecom">确定</view>
+    </view>
+  </view>
+  <view class="choiceModel" wx:if="{{choiceModel}}">
+    <view class="mode">
+      <view>
+        <view class="title">
+          <image src="../../images/macth_icon.png"></image>
+          <text>期望人数：</text>
+        </view>
+        <view>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <view>
+              <label class="radio">
+                <radio value="one" checked="{{true}}" />
+                <text>一对一</text>
+              </label>
+            </view>
+            <view>
+              <label class="radio">
+                <radio value="more" checked="{{false}}" />
+                <text>每人携带一朋友</text>
+              </label>
+            </view>
+          </radio-group>
+        </view>
+      </view>
+      <view>
+        <view class="title">
+          <image src="../../images/macth_icon.png"></image>
+          <text>期望人数：</text>
+        </view>
+        <view>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <view>
+              <label class="radio">
+                <radio value="one" checked="{{true}}" />
+                <text>AA制</text>
+              </label>
+            </view>
+            <view>
+              <label class="radio">
+                <radio value="more" checked="{{false}}" />
+                <text>男方付70% 女方付30%</text>
+              </label>
+            </view>
+          </radio-group>
+        </view>
+      </view>
+    </view>
+    <view class="operateMain">
+      <view class="disagree" bindtap="closeChoiceModel">取消</view>
+      <view class="agree" bindtap="configChoiceModel">确定</view>
+    </view>
+  </view>
+</view>

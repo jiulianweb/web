@@ -1,0 +1,66 @@
+<view class="orderDetail">
+  <view class="productInfo">
+    <view class="productInfoIn">
+      <view class="FL productImg">
+        <image src="../../images/productImg.png"></image>
+      </view>
+      <view class="FL productNum">
+        <view class="productName">芝士草莓冰饮</view>
+        <view>数量：<text>2</text></view>
+        <view>总价：<text>¥36</text></view>
+      </view>
+      <view class="absolute">¥<text>36</text></view>
+    </view>
+  </view>
+  <view class="productInfo">
+    <view class="order">
+      <view class="FL orderDetailIcon">
+        <image src="../../images/order.png"></image>
+      </view>
+      <view class="FR message">
+        <view class="title">订单信息</view>
+        <view class="line"></view>
+        <view class="orderCount">订单编号：<text>12345657</text></view>
+        <view class="orderCount">付款时间：<text>2019-04-08 19:00</text></view>
+        <view class="orderCount">数量：<text>2</text></view>
+        <view class="orderCount">总价：<text>¥36</text></view>
+        <view class="orderCount">实付：<text>¥36</text></view>
+      </view>
+    </view>
+  </view>
+  <view class="productInfo">
+    <view class="productMessage">
+      <view class="FL productMessageIcon">
+        <image src="../../images/product_icon.png"></image>
+      </view>
+      <view class="FR message">
+        <view class="title">商家信息</view>
+        <view class="line"></view>
+        <view class="adress">广州南湖萤火虫主题公园</view>
+        <view class="adressImg">
+          <image src="../../images/adress.png"></image>
+          <text>广州大道北同和大街1号一层</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="productInfo">
+    <view class="productMessage">
+      <view class="FL productMessageIcon">
+        <image src="../../images/orderMeet_icon.png"></image>
+      </view>
+      <view class="FR message">
+        <view class="title">约会信息</view>
+        <view class="line"></view>
+        <view class="adressImg">
+          <image src="../../images/time_icon.png"></image>
+          <text>2019-05-12  18:00</text>
+        </view>
+        <view class="adressImg">
+          <image src="../../images/adress.png"></image>
+          <text>广州大道北同和大街1号一层</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

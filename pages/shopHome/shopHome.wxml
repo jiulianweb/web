@@ -1,0 +1,96 @@
+<view class="shopHOme">
+  <view class="shopInfoCount">
+    <view class="count">
+      <view class="shopName">{{shopDetail.business_name}}</view>
+      <view class="adress">{{shopDetail.city}}</view>
+      <view class="money"><text>¥</text><text>{{shopDetail.minprice}}</text>起</view>
+      <scroll-view scroll-x class="scroll-x">
+        <view 
+        class="view-parent"
+        wx:for="{{shopDetail.imgs}}"
+        wx:for-item="item"
+        wx:key="item">
+          <view class="view-item">
+            <image src="{{item}}"></image>
+          </view>
+        </view>
+      </scroll-view>
+      <view class="Icon">
+        <image src="../../images/time_icon.png"></image>
+        <text>营业时间：{{shopDetail.worktime}}</text>
+      </view>
+      <view class="Icon">
+        <image src="../../images/adress.png"></image>
+        <text>{{shopDetail.address}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="shopRecom">
+    <view class="shopRecomTitle">菜单推荐</view>
+    <scroll-view scroll-x class="RecomScroll-x">
+        <view 
+        class="RecomView-parent"
+        wx:for="{{recommends}}"
+        wx:for-item="item"
+        wx:key="item">
+          <view class="RecomView-item">
+            <image class="foodImg" src="{{item.imgs[0]}}"></image>
+            <view class="absolute">
+              <image src="../../images/zan.png"></image>
+              <text>{{item.tnum}}人推荐</text>
+            </view>
+          </view>
+          <view class="shopName">{{item.menu_name}}</view>
+        </view>
+      </scroll-view>
+  </view>
+  <view class="shopDan">
+    <view class="FL">
+      <view class="shopDanTitle">商家菜单</view>
+      <view class="shopDan-item">
+        <view 
+        wx:for="{{tab}}"
+        wx:for-item="item"
+        wx:key="item"
+        data-index="{{index}}"
+        data-name="{{item}}"
+        class="{{tabIndex == index ? 'active' : ''}}"
+        bindtap="clickTab">{{item}}</view>
+      </view>
+    </view>
+    <view class="FL">
+      <view class="shopDanTitle shopDanName">{{tabName}}单品</view>
+      <view class="section">
+        <scroll-view
+          scroll-y
+          class="scroll-y"
+          bindscrolltoupper="upper"
+          bindscrolltolower="lower"
+          bindscroll="scroll"
+          scroll-into-view="{{toView}}"
+          scroll-top="{{scrollTop}}"
+        >
+          <view 
+          wx:for="{{menus}}"
+          wx:for-item="item"
+          wx:key="item"
+          class="scroll-view-item">
+            <view class="FL shopIcon">
+              <image src="{{item.imgs[0]}}"></image>
+            </view>
+            <view class="FL shopInfo">
+              <view class="shopName">{{item.menu_name}}</view>
+              <view class="shopPrice"><text>¥</text>{{item.price}}</view>
+            </view>
+            <view class="addShop">+</view>
+            <view class="reduceShop">-</view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+  <view class="submit">
+    <view class="FL">合计<text>¥</text>25</view>
+    <view class="FR">提交订单</view>
+  </view>
+</view>

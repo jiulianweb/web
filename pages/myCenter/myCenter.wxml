@@ -1,0 +1,76 @@
+<view class="myCenter">
+  <view class="userName">
+    <text>{{userInfo.nickname ? userInfo.nickname : userInfo.name}}</text>
+    <image 
+    wx:if="{{userInfo.headimgurl}}" 
+    bindtap="uploadImg"
+    src="{{userInfo.headimgurl}}"></image>
+    <image 
+    wx:if="{{userInfo.sex == 1 && !userInfo.headimgurl}}" 
+    bindtap="uploadImg"
+    src="../../images/boy_icon.png"></image>
+    <image 
+    wx:if="{{userInfo.sex == 2 && !userInfo.headimgurl}}"
+    bindtap="uploadImg" 
+    src="../../images/girl_iconed.png"></image>
+  </view>
+  <view class="tabNav">
+    <view class="FL barLink"
+    data-url="../myMeet/myMeet"
+    bindtap="goPage">
+      <view><image src="../../images/meet_icon.png"></image></view>
+      <view class="text">我的约会</view>
+    </view>
+    <view class="FL barLink"
+    data-url="../orderInfo/orderInfo"
+    bindtap="goPage">
+      <view><image src="../../images/order_icon.png"></image></view>
+      <view class="text">我的订单</view>
+    </view>
+    <view class="FL barLink"
+    data-url="../backsugges/backsugges"
+    bindtap="goPage">
+      <view><image src="../../images/sugges_icon.png"></image></view>
+      <view class="text">反馈及建议</view>
+    </view>
+    <view class="FL barLink"
+    data-url="../userInfo/userInfo"
+    bindtap="goPage">
+      <view><image src="../../images/addEdit_icon.png"></image></view>
+      <view class="text">编辑资料</view>
+    </view>
+    <view class="FL barLink"
+    data-url="../mysetTIme/mysetTIme"
+    bindtap="goPage">
+      <view><image src="../../images/edit_time_icon.png"></image></view>
+      <view class="text">时间设置</view>
+    </view>
+    <!-- <view class="FL barLink"
+    data-url="../testResultPage/testResultPage"
+    bindtap="goPage">
+      <view><image src="../../images/result_icon.png"></image></view>
+      <view class="text">性格测试结果</view>
+    </view> -->
+  </view>
+  <swiper
+    class="swiper"
+    indicator-dots="true"
+    autoplay="true"
+    indicator-active-color="#FFFFFF"
+    interval="{{interval}}"
+    duration="{{duration}}">
+    <block 
+      wx:for="{{userInfo.imgs}}"
+      wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="marginAuto">
+    <view class="title" wx:if="{{userInfo.hopeto}}">期待的他/她</view>
+    <view class="count" wx:if="{{userInfo.hopeto}}">{{userInfo.hopeto}}</view>
+    <view class="title" wx:if="{{userInfo.aboutme}}">关于我</view>
+    <view class="count" wx:if="{{userInfo.aboutme}}">{{userInfo.aboutme}}</view>
+  </view>
+</view>

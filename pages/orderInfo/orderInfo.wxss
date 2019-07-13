@@ -1,0 +1,116 @@
+page {
+  width: 100%;
+	height:auto;
+	background:#F5F5F5;
+}
+.orderInfo {
+  width: 100%;
+}
+.titleBox {
+  width: 100%;
+  height: 110rpx;
+  background: #FFFFFF;
+}
+.nav {
+  width: 100%;
+  height: 110rpx;
+  margin: 0 auto;
+}
+.nav view {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  height: 48rpx;
+  margin-top: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-family: "SourceHanSansSC-regular";
+  color: #222222;
+}
+.nav view:last-child {
+  margin-right: 0rpx;
+}
+.nav view text {
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  margin: auto;
+  width: 40rpx;
+  height: 8rpx;
+  background: #EF738E;
+}
+.product {
+  position: relative;
+  width: 708rpx;
+  height: 324rpx;
+  margin: 0 auto;
+  margin-top: 16rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+}
+.productIn {
+  width: 656rpx;
+  margin: 0 auto;
+}
+.productIn .title {
+  width: 100%;
+  padding-top: 36rpx;
+  padding-bottom: 12rpx;
+  border-bottom: 2rpx solid #F9F9F9;
+}
+.productIn .title image {
+  width: 46rpx;
+  height: 46rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.productIn .title text {
+  display: inline-block;
+  margin-left: 14rpx;
+  vertical-align: middle;
+  font-size: 28rpx;
+  color: #222222;
+  font-family: "SourceHanSansSC-regular";
+}
+.productCount {
+  width: 100%;
+  padding-top: 24rpx;
+}
+.productCount .productImg {
+  width: 136rpx;
+  height: 154rpx;
+  overflow: hidden;
+  margin-right: 30rpx;
+  border-radius: 10rpx;
+}
+.productCount .productImg image {
+  width: 136rpx;
+  height: 154rpx;
+  border-radius: 10rpx;
+}
+.productCount .productNum {
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #A1A1A1;
+  font-family: "SourceHanSansSC-regular";
+}
+.productCount .productNum view {
+  height: 36rpx;
+  line-height: 36rpx;
+  margin-top: 6rpx;
+}
+.product .absolute {
+  position: absolute;
+  bottom: 32rpx;
+  right: 26rpx;
+  width: 150rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  border-radius: 60rpx;
+  border: 2rpx solid #EF738E;
+  text-align: center;
+  font-size: 28rpx;
+  color: #EF738E;
+  font-family: "SourceHanSansSC-regular";
+}

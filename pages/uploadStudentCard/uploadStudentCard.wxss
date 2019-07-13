@@ -1,0 +1,110 @@
+page, .content {
+  width: 100%;
+}
+
+.content {
+  overflow: hidden;
+  padding-bottom: 80rpx;
+}
+
+.title {
+  padding-top: 22rpx;
+  padding-left: 42rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  color: rgba(34, 34, 34, 1);
+  font-size: 40rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+
+.identityInfo .tip {
+  margin-left: 46rpx;
+  margin-top: 24rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #222222;
+  font-size: 28rpx;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+  margin-bottom: 20rpx;
+}
+
+.identityInfo image {
+  margin-left: 40rpx;
+  width: 370rpx;
+  height: 230rpx;
+}
+
+.form {
+  margin-top: 36rpx;
+}
+
+.form .defaultClass {
+  color: rgba(189, 189, 190, 1);
+}
+
+.form .label {
+  box-sizing: border-box;
+  padding-left: 46rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+  margin-bottom: 16rpx;
+}
+
+.form .label text:first-child {
+  margin-right: 70rpx;
+}
+
+.form input {
+  margin-left: 34rpx;
+  box-sizing: border-box;
+  padding-left: 10rpx;
+  width: 690rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  color: rgba(33, 33, 33, 1);
+  font-size: 28rpx;
+  text-align: left;
+  font-family: Microsoft Yahei;
+  border: 1px solid #F1F1F1;
+  border-radius: 10rpx;
+}
+
+.form .mt10 {
+  margin-top: 20rpx;
+}
+
+.operate {
+  margin: 48rpx 40rpx 48rpx 40rpx;
+}
+
+.attetips {
+  margin-top: 20rpx;
+  color: rgba(33, 33, 33, 1);
+  font-size: 28rpx;
+  text-align: left;
+  font-family: Microsoft Yahei;
+}
+
+.attetips text {
+  display: inline-block;
+  margin-left: 46rpx;
+}
+
+.operate .button {
+  width: 670rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-radius: 60rpx;
+  background-color: rgba(239, 115, 142, 1);
+  text-align: center;
+  border: 2rpx solid rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 1);
+  font-size: 32rpx;
+  font-family: PingFangSC-regular;
+}

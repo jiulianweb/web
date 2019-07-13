@@ -1,0 +1,118 @@
+<view class="shopRecom">
+  <view class="shopRecomHeader">
+    <view class="headerBg">
+      <image src="../../images/shopRecomHeader.png"></image>
+    </view>
+    <view class="formData">
+      <view>
+        <view class="leftImg">
+          <image src="../../images/shopRecom_user.png"></image>
+        </view>
+        <view class="rightForm">
+          <view class="title">期待人数</view>
+          <view>
+            <radio-group class="radio-group" bindchange="radioChange">
+              <view>
+                <label class="radio">
+                  <radio value="one" checked="{{true}}" />
+                  <text>一对一</text>
+                </label>
+                <label class="radio">
+                  <radio value="more" checked="{{false}}" />
+                  <text>每人携带一朋友</text>
+                </label>
+              </view>
+            </radio-group>
+          </view>
+        </view>
+      </view>
+      <view>
+        <view class="leftImg">
+          <image src="../../images/shopRecmMoney.png"></image>
+        </view>
+        <view class="rightForm">
+          <view class="title">买单方式</view>
+          <view>
+            <radio-group class="radio-group" bindchange="radioChange">
+              <view>
+                <label class="radio">
+                  <radio value="one" checked="{{true}}" />
+                  <text>AA制</text>
+                </label>
+                <label class="radio">
+                  <radio value="more" checked="{{false}}" />
+                  <text>男方70%，女方30%</text>
+                </label>
+              </view>
+            </radio-group>
+          </view>
+        </view>
+      </view>
+      <view class="borderBottomNull">
+        <view class="leftImg">
+          <image src="../../images/shopRecmTime.png"></image>
+        </view>
+        <view class="rightForm">
+          <view class="title">约会时间填写</view>
+          <view>
+            <picker 
+            mode="multiSelector" 
+            value="{{dateTime1}}" 
+            bindchange="changeDateTime1" 
+            range="{{dateTimeArray1}}">
+            <view class="tui-picker-detail">
+            {{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+            </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="shopRecomTit" wx:if="{{status}}">
+    <view class="select">
+      <view class="FL selected">
+        <picker bindchange="bindPickerChange" value="{{regionIndex}}" range="{{regionArray}}">
+          <view class="picker">
+            <text>选择区域</text>
+            <text class="school">{{regionArray[regionIndex]}}</text>
+          </view>
+          <view class="absolut">
+            <image src="../../images/down_icon.png"></image>
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="count"
+  wx:if="{{status}}"
+  wx:for="{{shops}}"
+  wx:for-item="items"
+  wx:key="items">
+    <view class="countIn">
+      <view 
+      class="shopName" 
+      data-id="{{items.id}}"
+      bindtap="goPage">{{items.business_name}}</view>
+      <view 
+      class="Radioabsolut {{items.checked ? 'selectedAbs' : '' }}" 
+      data-id="{{items.id}}"
+      bindtap="clickSelect">
+        <view class="spot" wx:if="{{items.checked}}"></view>
+      </view>
+      <view 
+      data-id="{{items.id}}"
+      bindtap="goPage">
+        <view class="adress">{{items.city}}</view>
+        <view class="money"><text>¥</text><text>{{items.minprice}}</text>起</view>
+        <view class="imgBox"
+        wx:for="{{items.imgs}}"
+        wx:for-item="item"
+        wx:key="item">
+          <image src="{{item}}" class="{{(index+1)%3 === 0 ? 'active' : '' }}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="submit">提价</view>
+</view>

@@ -1,0 +1,19 @@
+<view class="myMeet">
+  <view class="myMeetIn">
+    <view class="marginAuto">
+      <view class="title">
+        <image src="../../images/meet_icon.png"></image>
+        <text>约会信息</text>
+      </view>
+      <view class="message">
+        <image src="../../images/time_icon.png"></image>
+        <text>2019-05-12  18:00</text>
+      </view>
+      <view class="message">
+        <image src="../../images/adress.png"></image>
+        <text>广州大道北同和大街1号一层</text>
+      </view>
+      <view class="absolute"><image src="../../images/position_icon.png"></image></view>
+    </view>
+  </view>
+</view>

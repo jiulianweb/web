@@ -1,0 +1,24 @@
+<!--pages/questionnaireTest/questionnaireTest.wxml-->
+<view class="content">
+  <view class="headerImg">
+    <image src="../../images/questionHeaderImg.png"></image>
+  </view>
+  <view class="question">
+    <view class="title">1. 我喜欢与很对朋友在一起，越多越好。</view>
+    <view class="form">
+      <view>A、是的</view>
+      <view>B、不是</view>
+      <view>C、无所谓</view>
+    </view>
+  </view>
+  <view class="operate">
+    <!-- <view class="nextBtn">下一题</view> -->
+    <view class="finish"
+    data-url="../testResultPage/testResultPage"
+    bindtap="goPage">完成测试</view>
+    <!-- <view class="prevNext">
+      <view class="prev">上一题</view>
+      <view class="next hover">下一题</view>
+    </view> -->
+  </view>
+</view>

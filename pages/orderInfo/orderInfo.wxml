@@ -1,0 +1,51 @@
+<view class="orderInfo">
+  <view class="titleBox">
+    <view class="nav">
+      <view
+        wx:for="{{titles}}"
+        wx:for-item="item"
+        wx:key="key"
+        bindtap="tabClick"
+        data-index="{{index}}"
+        wx:for-index="index">{{item.title}}<text wx:if="{{item.active}}"></text></view>
+    </view>
+  </view>
+  <view class="product"
+  data-url="../orderDetail/orderDetail"
+  bindtap="goPage">
+    <view class="productIn">
+      <view class="title">
+        <image src="../../images/header_icon.png"></image>
+        <text>广州南湖萤火虫主题公园</text>
+      </view>
+      <view class="productCount">
+        <view class="FL productImg">
+          <image src="../../images/productImg.png"></image>
+        </view>
+        <view class="FL productNum">
+          <view>数量：<text>2</text></view>
+          <view>总价：<text>¥36</text></view>
+        </view>
+      </view>
+    </view>
+    <view class="absolute">去支付</view>
+  </view>
+  <view class="product">
+    <view class="productIn">
+      <view class="title">
+        <image src="../../images/header_icon.png"></image>
+        <text>广州南湖萤火虫主题公园</text>
+      </view>
+      <view class="productCount">
+        <view class="FL productImg">
+          <image src="../../images/productImg.png"></image>
+        </view>
+        <view class="FL productNum">
+          <view>数量：<text>2</text></view>
+          <view>总价：<text>¥36</text></view>
+        </view>
+      </view>
+    </view>
+    <view class="absolute">去支付</view>
+  </view>
+</view>

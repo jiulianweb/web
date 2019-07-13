@@ -1,0 +1,36 @@
+<view class="backSugges">
+  <view class="marginAuto">
+    <view class="title">反馈标签</view>
+    <view class="labelType">
+      <view
+      wx:for="{{tags}}"
+      wx:for-item="item"
+      wx:key="item"
+      data-index="{{index}}"
+      class="FL {{item.checked ? 'active' : ''}}"
+      bindtap="clickTag">{{item.name}}</view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="marginAuto">
+    <view class="counttitle">反馈内容</view>
+    <textarea 
+    value="{{count}}"
+    data-type="count"
+    placeholder="请输入反馈内容" 
+    bindinput="bindKeyInput"
+    maxlength="140"></textarea>
+    <view class="tips">错误图片点击重新上传</view>
+    <view class="imgBox">
+      <!--最多上传2张-->
+      <image
+      wx:for="{{imgArr}}"
+      wx:for-item="item"
+      wx:key="item"
+      data-index="{{index}}"
+      src="{{item}}"
+      bindtap="uploadImg"></image>
+    </view>
+  </view>
+</view>
+<view class="submit" bindtap="submit">提交</view>

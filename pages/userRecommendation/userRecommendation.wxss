@@ -1,0 +1,251 @@
+/* pages/userRecommendation/userRecommendation.wxss */
+
+.searchBox {
+  margin-top: 30rpx;
+  margin-left: 36rpx;
+  margin-bottom: 28rpx;
+  width: 670rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  border-radius: 60rpx;
+  background-color: rgba(245, 245, 245, 1);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.searchBox .icon, .searchBox input {
+  float: left;
+}
+
+.searchBox .icon {
+  margin-left: 228rpx;
+  margin-top: 16rpx;
+  color: rgba(233, 233, 233, 1);
+}
+
+.searchBox input {
+  margin-left: 10rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  font-size: 28rpx;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+}
+
+.searchBox .plh {
+  color: rgba(223, 223, 223, 1);
+}
+
+.searchBar {
+  overflow: hidden;
+  margin-bottom: 30rpx;
+  color: rgba(217, 217, 217, 1);
+  font-size: 28rpx;
+  font-family: SourceHanSansSC-regular;
+}
+
+.searchBar .item {
+  margin-left: 40rpx;
+  float: left;
+}
+
+.searchBar .line {
+  margin: 0 auto;
+  width: 40rpx;
+  height: 8rpx;
+  line-height: 40rpx;
+  border-radius: 20rpx;
+  background-color: rgba(239, 115, 142, 1);
+  text-align: center;
+  border: 2rpx solid rgba(255, 255, 255, 0);
+}
+
+.searchBar .select {
+  color: rgba(239, 115, 142, 1);
+}
+
+.img_item {
+  width: 46%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 2.5%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.img_item>view {
+  position: relative;
+  margin-bottom: 12rpx;
+}
+
+.img_item .dialog {
+  box-sizing: border-box;
+  z-index: 1;
+  bottom: 8rpx;
+  top: inherit;
+  position: absolute;
+  width: 100%;
+  height: 64rpx;
+  opacity: 0.5;
+  border-radius: 0rpx 0rpx 4rpx 4rpx;
+  background-color: rgba(0, 0, 0, 1);
+  text-align: center;
+  border: 2rpx solid rgba(255, 255, 255, 0);
+}
+
+.img_item .introduction {
+  box-sizing: border-box;
+  z-index: 2;
+  bottom: 20rpx;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+}
+
+.img_item .introduction>view {
+  float: left;
+  padding: 0 14rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  /*opacity: 0.48;*/
+  border-radius: 60rpx;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  border: 2rpx solid rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-regular;
+  margin-right: 20rpx;
+}
+
+.dialog {
+  height: 115%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #333;
+  opacity: 0.6;
+  z-index: 10;
+}
+
+.invitationBox {
+  width: 584rpx;
+  height: 840rpx;
+  background: #fff;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  bottom: 0rpx;
+  z-index: 11;
+  margin: auto;
+  line-height: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.invitationBox .operateMain {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  border-top: 2rpx solid #f1f1f1;
+  box-sizing: border-box;
+  height: 100rpx;
+  font-size: 32rpx;
+  line-height: 100rpx;
+  color: rgba(189, 189, 190, 1);
+  font-family: SourceHanSansSC-regular;
+  text-align: center;
+}
+
+.invitationBox .operateMain .disagree {
+  float: left;
+  width: 290rpx;
+  border-right: 2rpx solid #f1f1f1;
+  box-sizing: border-box;
+}
+
+.invitationBox .operateMain .agree {
+  float: left;
+  color: #ef738e;
+  width: 290rpx;
+}
+
+.headPhotoIcon {
+  margin: 44rpx auto 28rpx;
+  height: 158rpx;
+  width: 166rpx;
+}
+
+.headPhotoIcon image {
+  width: 100%;
+  height: 100%;
+}
+
+.inviteCome {
+  width: 100%;
+  margin-bottom: 32rpx;
+  height: 48rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 32rpx;
+  text-align: center;
+  font-family: SourceHanSansSC-regular;
+}
+
+.mode {
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  padding: 24rpx 40rpx;
+  height: 152rpx;
+  border-radius: 12rpx;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2rpx dashed rgba(219, 212, 212, 1);
+  display: inline-block;
+}
+
+.mode>view {
+  overflow: hidden;
+}
+
+.mode>view:first-child {
+  margin-bottom: 26rpx;
+}
+
+.mode>view>view {
+  float: left;
+}
+
+.mode>view> .yuan {
+  width: 16rpx;
+  height: 16rpx;
+  background-color: rgba(201, 173, 250, 1);
+  border: 2rpx solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  margin-top: 12rpx;
+}
+
+.mode>view> .yuan2 {
+  background-color: rgba(236, 129, 169, 1);
+  border: 1px solid rgba(255, 255, 255, 0);
+  margin-right: 14rpx;
+}
+
+.mode>view> view:last-child {
+  height: 40rpx;
+  line-height: 40rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+}
+
+.mode>view> view:last-child text {
+  color: #bdbdbe;
+}
+
+.modeControl {
+  text-align: center;
+}

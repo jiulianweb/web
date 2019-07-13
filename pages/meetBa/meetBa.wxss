@@ -1,0 +1,216 @@
+page {
+  width: 100%;
+	height:auto;
+	background:#FFFFFF;
+}
+.meetBa {
+  width: 100%;
+  padding-bottom: 100rpx;
+}
+.marginAuto {
+  width: 690rpx;
+  margin: 0 auto;
+}
+.uploadTitle {
+  position: relative;
+  width: 100%;
+  height: 136rpx;
+  overflow: hidden;
+  border-bottom: 2rpx solid #F5F5F5;
+}
+.uploadTitle .title {
+  position: relative;
+  margin-top: 60rpx;
+  width: 112rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #EF738E;
+  font-family: "SourceHanSansSC-regular";
+  font-weight: bold;
+}
+.uploadTitle .title text {
+  position: absolute;
+  bottom: -4rpx;
+  left: 10rpx;
+  width: 40rpx;
+  height: 8rpx;
+  border-radius: 20rpx;
+  background: #EF738E;
+}
+.uploadTitle .addBtn {
+  position: absolute;
+  top: 40rpx;
+  right: 0rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background: #EF738E;
+  overflow: hidden;
+}
+.uploadTitle .addBtn image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.marginAuto .count {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 36rpx;
+  border-bottom: 2rpx solid #F5F5F5;
+}
+.marginAuto .count .userBase {
+  margin-top: 38rpx;
+  overflow: hidden;
+}
+.userBase .userHead {
+  width: 86rpx;
+  height: 86rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userBase .userHead image {
+  width: 86rpx;
+  height: 86rpx;
+  border-radius: 50%;
+}
+.marginAuto .count .userInfo {
+  margin-left: 20rpx;
+  overflow: hidden;
+}
+.userInfo .userName {
+  height: 48rpx;
+  line-height: 48rpx;
+  font-size: 36rpx;
+  color: #222222;
+  font-family: "SourceHanSansSC-regular";
+}
+.userInfo .userSex {
+  overflow: hidden;
+  width: 90rpx;
+  height: 36rpx;
+  text-align: center;
+  border-radius: 60rpx;
+  
+}
+.userInfo .boy {
+  background: #66CCFF;
+}
+.userInfo .gril {
+  background: #6633FF;
+}
+.userInfo .userSex image {
+  float: left;
+  margin-top: 6rpx;
+  width: 28rpx;
+  height: 32rpx;
+  margin-right: 4rpx;
+  margin-left: 8rpx;
+}
+.userInfo .userSex text {
+  float: left;
+  height: 30rpx;
+  line-height: 30rpx;
+  margin-top: 4rpx;
+  font-size: 24rpx;
+  color: #FFFFFF;
+  font-family: "SourceHanSansSC-regular";
+}
+.count .magess {
+  width: 100%;
+  line-height: 44rpx;
+  font-size: 32rpx;
+  color: #222222;
+  font-family: "SourceHanSansSC-regular";
+  margin-top: 32rpx;
+}
+.count .imageBox {
+  width: 100%;
+  margin-top: 12rpx;
+  margin-bottom: 32rpx;
+}
+.count .imageBox image {
+  width: 218rpx;
+  height: 218rpx;
+  margin-right: 18rpx;
+}
+.count .imageBox .active {
+  margin-right: 0rpx;
+}
+.count .schoolAdress {
+  display: inline-block;
+  padding: 0rpx 16rpx 2rpx 16rpx;
+  border-radius: 30rpx;
+  background: #F8F8F8;
+}
+.count .schoolAdress image {
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+}
+.count .schoolAdress text {
+  display: inline-block;
+  vertical-align: middle;
+  height: 34rpx;
+  line-height: 34rpx;
+  font-size: 22rpx;
+  color: #A29F9F;
+  font-family: "SourceHanSansSC-regular";
+}
+.adressDetail {
+  width: 100%;
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+.adressDetail text {
+  display: inline-block;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+  color: #BDBDBE;
+  font-family: "SourceHanSansSC-regular";
+}
+.adressDetail text:last-child {
+  margin-right: 0rpx;
+}
+.clickZanPL {
+  width: 100%;
+  overflow: hidden;
+  height: 52rpx;
+  margin-top: 34rpx;
+}
+.clickZanPL .FL {
+  margin-right: 64rpx;
+  height: 52rpx;
+  overflow: hidden;
+}
+.clickZanPL .FL:last-child {
+  margin-right: 0rpx;
+}
+.clickZanPL .zan image {
+  float: left;
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}
+.clickZanPL .zan text {
+  float: left;
+  margin-top: 12rpx;
+  font-size: 32rpx;
+  color: #BDBDBE;
+  font-family: "SourceHanSansSC-regular";
+}
+.clickZanPL .pl image {
+  float: left;
+  width: 40rpx;
+  height: 52rpx;
+  margin-right: 10rpx;
+}
+.clickZanPL .pl text {
+  float: left;
+  margin-top: 10rpx;
+  font-size: 32rpx;
+  color: #BDBDBE;
+  font-family: "SourceHanSansSC-regular";
+}
+

@@ -1,0 +1,41 @@
+/* pages/matchingSuccess/matchingSuccess.wxss */
+.logoMain{
+    margin: 160rpx auto 8rpx;
+    width: 400rpx;
+    height: 338rpx;
+}
+.logoMain image{
+    height: 100%;
+    width: 100%;
+}
+.textMain view:first-child{
+    width: 100%;
+    height: 54rpx;
+    line-height: 54rpx;
+    color: rgba(239, 115, 142, 1);
+    font-size: 36rpx;
+    text-align: center;
+    font-family: SourceHanSansSC-regular;
+}
+.textMain view:last-child{
+    margin-top: 20rpx;
+    width: 100%;
+    height: 48rpx;
+    color: rgba(150, 150, 150, 1);
+    font-size: 32rpx;
+    text-align: center;
+    font-family: SourceHanSansSC-regular;
+}
+.operate{
+    margin: 296rpx auto 0;
+    width: 676rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    border-radius: 60rpx;
+    background-color: rgba(239, 115, 142, 1);
+    text-align: center;
+    border: 2rpx solid rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 1);
+    font-size: 32rpx;
+    font-family: SourceHanSansSC-regular;
+}

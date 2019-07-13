@@ -1,0 +1,73 @@
+<view class="meetBa">
+  <view class="marginAuto">
+    <view class="uploadTitle">
+      <view class="title">
+        今日更新
+        <text></text>
+      </view>
+      <view class="addBtn"
+      data-url="../meetMood/meetMood"
+      bindtap="goPage">
+        <image src="../../images/addImg.png"></image>
+      </view>
+    </view>
+    <view class="count"
+    wx:for="{{meetBaList}}"
+    wx:for-index="indexs"
+    wx:for-item="items"
+    wx:key="items"
+    data-id="{{items.id}}"
+    data-url="../meetBaDetail/meetBaDetail"
+    bindtap="goPage">
+      <view>
+        <view class="userBase">
+          <view class="FL userHead">
+            <image 
+            wx:if="{{items.sex == 1 && !items.headimgurl}}" 
+            src="../../images/boy_icon.png"></image>
+            <image 
+            wx:if="{{items.sex == 2 && !items.headimgurl}}"
+            src="../../images/girl_iconed.png"></image>
+            <image 
+            wx:if="{{items.headimgurl}}" 
+            src="{{items.headimgurl}}"></image>
+          </view>
+          <view class="FL userInfo">
+            <view class="userName">{{items.name}}</view>
+            <view class="userSex {{items.sex == 1 ? 'boy' : 'gril'}}">
+              <image wx:if="{{items.sex == 1}}" src="../../images/nan.png"></image>
+              <image wx:if="{{items.sex == 2}}" src="../../images/nv.png"></image>
+              <text>{{items.age}}</text>
+            </view>
+          </view>
+        </view>
+        <view class="magess"><text>{{items.content}}</text></view>
+        <view class="imageBox">
+          <!--模3等于0的时候添加active-->
+          <image
+          wx:if="{{items.pics.length > 0}}"
+          wx:for="{{items.pics}}"
+          wx:for-index="index"
+          wx:for-item="item"
+          wx:key="item"
+          src="{{item}}"
+          class="{{(index+1)%3 == 0 ? 'active' : ''}}"></image>
+        </view>
+        <view class="schoolAdress">
+          <image src="../../images/adressed.png"></image>
+          <text>{{items.school}}</text>
+        </view>
+      </view>
+      <view class="clickZanPL">
+        <view class="FL zan">
+          <image src="../../images/zan.png"></image>
+          <text>{{items.zan_num}}</text>
+        </view>
+        <view class="FL pl">
+          <image src="../../images/pl_icon.png"></image>
+          <text>{{items.message_num}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,69 @@
+page {
+  width: 100%;
+	height:auto;
+	background:#F5F5F5;
+}
+.myMeet {
+  width: 100%;
+  padding-bottom: 100rpx;
+}
+.myMeetIn {
+  width: 100%;
+  height: 250rpx;
+  margin-top: 20rpx;
+  position: relative;
+  background: #FFFFFF;
+}
+.marginAuto {
+  width: 668rpx;
+  margin: 0 auto;
+}
+.marginAuto .title {
+  width: 100%;
+  padding-top: 34rpx;
+  padding-bottom: 24rpx;
+  border-bottom: 2rpx solid #F5F5F5;
+}
+.marginAuto .title image {
+  width: 40rpx;
+  height: 36rpx;
+  margin-right: 14rpx;
+  vertical-align: middle;
+}
+.marginAuto .title text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 28rpx;
+  color: #222222;
+  font-family: "SourceHanSansSC-regular";
+}
+.marginAuto .message {
+  width: 100%;
+  height: 40rpx;
+  margin-top: 10rpx;
+}
+.marginAuto .message image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 14rpx;
+  vertical-align: middle;
+}
+.marginAuto .message text{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: #A1A1A1;
+  font-family: "SourceHanSansSC-regular";
+}
+.marginAuto .absolute{
+  position: absolute;
+  right: 38rpx;
+  bottom: 32rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.marginAuto .absolute image{
+  width: 60rpx;
+  height: 60rpx;
+}
+  

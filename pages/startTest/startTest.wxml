@@ -1,0 +1,13 @@
+<!--pages/startTest/startTest.wxml-->
+<view class="content">
+  <view class="imageMain">
+    <image  src="../../images/startTest_img.png"></image>
+  </view>
+  <view class="intoTip">
+    <view>欢迎来到玖恋小程序</view>
+    <view>开始你的测试吧</view>
+  </view>
+  <view class="startTestBtn"
+  data-url="../questionnaireTest/questionnaireTest"
+  bindtap="goPage">开始测试</view>
+</view>

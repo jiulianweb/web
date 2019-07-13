@@ -1,0 +1,25 @@
+<view class="meetMood">
+  <view class="marginAuto">
+    <view class="title">聊聊你的约会情况吧</view>
+    <view class="edtilInput">
+      <textarea 
+      value="{{count}}"
+      data-type="count"
+      bindinput="bindKeyInput"
+      placeholder="请输入内容"
+      ></textarea>
+    </view>
+    <view class="uploadImg">
+      <!--模3等于0添加class lastImg-->
+      <image
+      wx:for="{{imgArr}}"
+      wx:for-item="item"
+      wx:key="item"
+      data-index="{{index}}"
+      src="{{item}}"
+      class="{{(index+1)%3==0 ? 'lastImg' : ''}}"
+      bindtap="uploadImg"></image>
+    </view>
+  </view>
+  <view class="submit" bindtap="submit">提交</view>
+</view>

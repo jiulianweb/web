@@ -1,0 +1,151 @@
+page {
+  width: 100%;
+	height:auto;
+	background:#F5F5F5;
+}
+.orderDetail {
+  width: 100%;
+  padding-bottom: 200rpx;
+}
+.productInfo {
+  width: 100%;
+  margin-top: 20rpx;
+  background: #FFF;
+}
+.productInfoIn {
+  position: relative;
+  width: 680rpx;
+  margin: 0 auto;
+  height: 190rpx;
+  padding-top: 44rpx;
+}
+.productImg {
+  width: 136rpx;
+  height: 154rpx;
+  overflow: hidden;
+  margin-right: 30rpx;
+  border-radius: 10rpx;
+}
+.productImg image {
+  width: 136rpx;
+  height: 154rpx;
+  border-radius: 10rpx;
+}
+.productNum {
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #A1A1A1;
+  font-family: "SourceHanSansSC-regular";
+}
+.productNum view {
+  height: 36rpx;
+  line-height: 36rpx;
+  margin-top: 6rpx;
+}
+.productNum .productName {
+  font-size: 28rpx;
+  color: #222222;
+}
+.productInfoIn .absolute {
+  position: absolute;
+  bottom: 88rpx;
+  right: 26rpx;
+  width: 150rpx;
+  height: 60rpx;
+  line-height: 76rpx;
+  text-align: right;
+  font-size: 28rpx;
+  color: #FF5105;
+  font-family: "SourceHanSansSC-regular";
+}
+.productInfoIn .absolute text {
+  font-size: 48rpx;
+  margin-left: 10rpx;
+}
+.order {
+  width: 680rpx;
+  margin: 0 auto;
+  padding-bottom: 20rpx;
+  padding-top: 26rpx;
+  overflow: hidden;
+}
+.order .orderDetailIcon {
+  height: 100%;
+  margin-right: 14rpx;
+}
+.order .orderDetailIcon image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.message {
+  width: 612rpx;
+}
+.message .title{
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: left;
+  font-size: 28rpx;
+  color: #222222;
+  font-family: "SourceHanSansSC-regular";
+}
+.line {
+  width: 100%;
+  height: 4rpx;
+  margin-top: 14rpx;
+  background: #F5F5F5;
+}
+.orderCount {
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: #A1A1A1;
+  font-family: "SourceHanSansSC-regular";
+}
+.orderCount text {
+  color: #222222;
+}
+.productMessage {
+  width: 680rpx;
+  margin: 0 auto;
+  padding-top: 26rpx;
+  padding-bottom: 48rpx;
+  overflow: hidden;
+}
+.productMessage .productMessageIcon {
+  height: 100%;
+  margin-right: 14rpx;
+}
+.productMessage .productMessageIcon image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.adress {
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #222222;
+  font-family: "SourceHanSansSC-regular";
+}
+.adressImg {
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 10rpx;
+}
+.adressImg image {
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.adressImg text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: #A1A1A1;
+  font-family: "SourceHanSansSC-regular";
+}

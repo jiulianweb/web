@@ -1,0 +1,564 @@
+page {
+  height: 100%;
+}
+
+.page-body {
+  width: 100%;
+}
+
+.page-section {
+  width: 100%;
+}
+
+.page-section_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-section:last-child {
+  margin-bottom: 0;
+}
+
+.page-section-spacing {
+  box-sizing: border-box;
+}
+
+button {
+  margin-bottom: 30rpx;
+}
+
+button:last-child {
+  margin-bottom: 0;
+}
+
+.page-section-title {
+  padding: 0;
+}
+
+.swiper {
+  height: 418rpx;
+}
+
+.swiper-item {
+  display: block;
+  height: 418rpx;
+}
+
+.swiper-item image {
+  width: 100%;
+}
+
+.detailMsg {
+  margin-top: 46rpx;
+  padding: 0 40rpx 60rpx;
+  overflow: hidden;
+}
+
+.detailMsg .title {
+  overflow: hidden;
+}
+
+.detailMsg .title>view {
+  float: left;
+}
+
+.detailMsg .title>view:last-child {
+  float: right;
+}
+
+.detailMsg .title view:first-child {
+  float: left;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: rgba(41, 41, 41, 1);
+  font-size: 40rpx;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+  margin-right: 10rpx;
+}
+
+.detailMsg .title view:nth-child(2) {
+  margin-top: 10rpx;
+  width: 76rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  border-radius: 60rpx;
+  border: 2rpx solid rgba(255, 255, 255, 0);
+  overflow: hidden;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20rpx;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+}
+
+.detailMsg .title .boy {
+  background: #66CCFF;
+}
+
+.detailMsg .title .gril {
+  background: #6633FF;
+}
+
+.detailMsg .title view:nth-child(2) image {
+  float: left;
+  height: 28rpx;
+  width: 28rpx;
+  margin-left: 8rpx;
+  margin-top: 4rpx;
+  margin-right: 4rpx;
+}
+
+.detailMsg .title .share {
+  width: 100rpx;
+  float: right;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: rgba(239, 115, 142, 1);
+  font-size: 28rpx;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+}
+
+.detailMsg .title .share image {
+  float: right;
+  height: 30rpx;
+  width: 30rpx;
+  margin-left: 8rpx;
+  margin-top: 6rpx;
+}
+
+.addrHeight {
+  margin-top: 18rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  overflow: hidden;
+}
+
+.addrHeight text:first-child {
+  float: left;
+  margin-right: 24rpx;
+  height: 20rpx;
+  line-height: 20rpx;
+  color: rgba(142, 142, 142, 1);
+  font-size: 24rpx;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+}
+
+.addrHeight text:last-child {
+  float: left;
+  height: 20rpx;
+  line-height: 20rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+}
+
+.freeTime {
+  margin-top: 20rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  overflow: hidden;
+}
+
+.freeTime text:first-child {
+  float: left;
+  margin-right: 24rpx;
+  color: rgba(142, 142, 142, 1);
+  font-size: 24rpx;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+}
+
+.freeTime text:last-child {
+  float: left;
+  margin-right: 24rpx;
+  color: rgba(142, 142, 142, 1);
+  font-size: 24rpx;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+}
+
+.mt88rpx {
+  margin-top: 88rpx;
+}
+
+.aboutDetail {
+  margin-top: 30rpx;
+}
+
+.aboutDetail>view {
+  /*height: 40rpx;*/
+  margin-bottom: 32rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+  color: rgba(41, 41, 41, 1);
+  font-size: 28rpx;
+  font-family: SourceHanSansSC-regular;
+}
+
+.aboutDetail>view image, .aboutDetail>view text {
+  width: 610rpx;
+  float: left;
+  margin-left: 12rpx;
+  color: rgba(41, 41, 41, 1);
+  font-size: 28rpx;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+}
+
+.aboutDetail>view image {
+  height: 34rpx;
+  width: 34rpx;
+  margin-top: 4rpx;
+}
+
+.detailMsg .label {
+  margin-top: 34rpx;
+  zoom: 1;
+}
+
+.detailMsg .label:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.detailMsg .label>view {
+  float: left;
+  padding: 0 40rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  border-radius: 60rpx;
+  background-color: rgba(255, 246, 248, 1);
+  text-align: center;
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+  border: 2rpx solid rgba(255, 202, 214, 1);
+  color: rgba(239, 115, 142, 1);
+  font-size: 14px;
+  font-family: SourceHanSansSC-regular;
+  margin-right: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.footer {
+  height: 210rpx;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.footer view {
+  margin-top: 72rpx;
+  float: left;
+  width: 274rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-radius: 60rpx;
+  background-color: rgba(239, 115, 142, 1);
+  text-align: center;
+  box-shadow: 2rpx 2rpx 16rpx 0px rgba(255, 199, 199, 1);
+  border: 2rpx solid rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 1);
+  font-size: 32rpx;
+  font-family: SourceHanSansSC-regular;
+}
+
+.footer view:first-child {
+  margin-right: 120rpx;
+  margin-left: 40rpx;
+}
+
+.footer .finishBtn {
+  background: #cfcfcf;
+  box-shadow: 2rpx 2rpx 12rpx 0px rgba(232, 232, 232, 1);
+  border: 2rpx solid rgba(255, 255, 255, 0);
+}
+.marginAuto {
+  width: 690rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.marginAuto .title {
+  width: 100%;
+  height: 42rpx;
+  line-height: 42rpx;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+  color: #101010;
+  font-family: "SourceHanSansSC-regular";
+}
+.marginAuto .count {
+  font-size: 28rpx;
+  color: #8E8E8E;
+  font-family: "SourceHanSansSC-regular";
+}
+
+.option {
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 100%;
+  height: 2010rpx;
+  background: #000;
+  opacity: 0.6;
+}
+
+.matchingModel {
+  position: fixed;
+  left: 0rpx;
+  right: 0rpx;
+  top: 0rpx;
+  bottom: 0rpx;
+  z-index: 999;
+  margin: auto;
+  width: 670rpx;
+  height: 1000rpx;
+  background: #fff;
+  border-radius: 20rpx;
+}
+
+.close {
+  position: absolute;
+  right: -24rpx;
+  top: -24rpx;
+  width: 68rpx;
+  height: 68rpx;
+  line-height: 60rpx;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 50rpx;
+  color: #000;
+  font-family: "SourceHanSansSC-regular";
+}
+
+.matchingModel .headerTitle {
+  position: relative;
+  width: 582rpx;
+  height: 186rpx;
+  margin: 0 auto;
+  margin-top: 24rpx;
+}
+
+.matchingModel .headerIcon {
+  position: absolute;
+  top: 25rpx;
+  width: 90rpx;
+  height: 90rpx;
+  padding: 10rpx;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.matchingModel .headerIcon image {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.matchingModel .Icon1 {
+  left: 0rpx;
+  z-index: 10;
+}
+
+.matchingModel .Icon2 {
+  left: 80rpx;
+}
+
+.matchDetal {
+  position: absolute;
+  right: 0rpx;
+  bottom: 46rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #bdbdbe;
+  font-family: "SourceHanSansSC-regular";
+}
+
+.matchDetal text {
+  display: inline-block;
+  margin-left: 10rpx;
+  font-size: 46rpx;
+  color: rgb(152, 103, 236);
+  font-family: "SourceHanSansSC-regular";
+}
+
+.matchingConut {
+  width: 582rpx;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+
+.matchingConutTit {
+  height: 40rpx;
+}
+
+.matchingConutTit image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}
+
+.matchingConutTit text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 28rpx;
+  color: #101010;
+  font-family: "SourceHanSansSC-regular";
+}
+
+.matchingConut .const {
+  width: 522rpx;
+  margin-top: 20rpx;
+  margin-bottom: 28rpx;
+  padding: 24rpx 30rpx;
+  border: 2rpx solid #f3f0f9;
+  border-radius: 10rpx;
+  background: #faf7fc;
+  font-size: 24rpx;
+  color: #796f73;
+  font-family: "SourceHanSansSC-regular";
+}
+
+.choiceModel, .invitationBox {
+  width: 584rpx;
+  height: 442rpx;
+  background: #fff;
+  position: fixed;
+  left: 80rpx;
+  top: 230rpx;
+  z-index: 11;
+  line-height: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.choiceModel .operateMain, .invitationBox .operateMain {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  border-top: 2rpx solid #f1f1f1;
+  box-sizing: border-box;
+  height: 100rpx;
+  font-size: 32rpx;
+  line-height: 100rpx;
+  color: rgba(189, 189, 190, 1);
+  font-family: SourceHanSansSC-regular;
+  text-align: center;
+}
+
+.choiceModel .operateMain .disagree, .invitationBox .operateMain .disagree {
+  float: left;
+  width: 290rpx;
+  border-right: 2rpx solid #f1f1f1;
+  box-sizing: border-box;
+}
+
+.choiceModel .operateMain .agree, .invitationBox .operateMain .agree {
+  float: left;
+  color: #ef738e;
+  width: 290rpx;
+}
+
+.headPhotoIcon {
+  margin: 44rpx auto 28rpx;
+  height: 158rpx;
+  width: 166rpx;
+}
+
+.headPhotoIcon image {
+  width: 100%;
+  height: 100%;
+}
+
+.inviteCome {
+  width: 100%;
+  margin-bottom: 32rpx;
+  height: 48rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 32rpx;
+  text-align: center;
+  font-family: SourceHanSansSC-regular;
+}
+
+.choiceModel {
+  height: 594rpx;
+}
+
+.mode {
+  width: 380rpx;
+  box-sizing: border-box;
+  margin: 48rpx auto 0;
+}
+
+.mode .title {
+  width: 100%;
+  height: 40rpx;
+  margin-top: 48rpx;
+}
+
+.mode .title image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}
+
+.mode .title text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 28rpx;
+  color: #101010;
+  font-family: "SourceHanSansSC-regular";
+}
+
+.radio-group view {
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 28rpx;
+}
+
+.radio-group view text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 28rpx;
+  color: #796f73;
+  margin-left: 10rpx;
+  font-family: "SourceHanSansSC-regular";
+}
+
+.radio-group view radio {
+  width: 38rpx;
+  height: 38rpx;
+  border: none;
+}
+
+.radio-group view radio .wx-radio-input {
+  border-radius: 50%;
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+  border-radius: 50%;
+  width: 46rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  margin-top: -1rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  background: #ef738e;
+  border-color: #ef738e;
+}

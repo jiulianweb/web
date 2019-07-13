@@ -1,0 +1,15 @@
+<!--pages/testResultPage/testResultPage.wxml-->
+<view class="content">
+  <view class="resultMain">
+    <view class="type">您的类型是</view>
+    <view class="result">开放性</view>
+  </view>
+  <view class="imageMain">
+    <image src="../../images/result_img.png"></image>
+  </view>
+  <view class="explain">
+    <text>解释：</text>你尊重具体事实，讲求实际，喜欢规则。不喜欢虚无缥缈的理想主义。当做决策的时候，你喜欢稳妥的决定，即使这个决策保守一点也没什么。与伴侣在一起做决策时，你通常是那个坚守原则的人。
+  </view>
+  <view class="intoApp"
+  bindtap="goPage">进入程序</view>
+</view>

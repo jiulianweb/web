@@ -1,0 +1,97 @@
+<view class="content">
+  <view class="title">
+    <text>填写资料</text>
+  </view>
+  <view class="form">
+    <view class="section">
+      <input
+        placeholder="填写昵称"
+        bindinput="bindKeyInput"
+        placeholder-class="defaultClass"
+        maxlength="12"
+        data-key="nickname"/>
+    </view>
+    <view class="section">
+      <picker mode="date"
+        value="{{date}}"
+        start="1960-09-01"
+        end="2050-09-01"
+        bindchange="bindKeyInput"
+        data-key="birthday">
+        <view class="picker">
+          <text wx:if="{{reqData.birthday==''}}">选择生日</text>
+          <text wx:if="{{reqData.birthday!=''}}" class="realDate">{{reqData.birthday}}</text>
+        </view>
+      </picker>
+      <image class="select_icon" src="../../images/select_icon.png"></image>
+    </view>
+    <view class="section">
+      <input maxlength="3"
+        type="number"
+        placeholder="填写身高"
+        maxlength="3"
+        bindinput="bindKeyInput"
+        placeholder-class="defaultClass"
+        data-key="height"/>
+    </view>
+    <view class="section">
+      <input bindinput="bindKeyInput"
+        maxlength="20"
+        placeholder="填写学校"
+        placeholder-class="defaultClass"
+        data-key="school"/>
+    </view>
+    <view class="section">
+      <input bindinput="bindKeyInput"
+        maxlength="20"
+        placeholder="填写专业"
+        placeholder-class="defaultClass"
+        data-key="major"/>
+    </view>
+    <!--<view class="section">-->
+      <!--<input placeholder="输入手机号码"-->
+             <!--maxlength="11"-->
+             <!--type="number"-->
+             <!--placeholder-class="defaultClass"/>-->
+    <!--</view>-->
+    <!--<view class="section vCode">-->
+      <!--<input placeholder="输入验证码"-->
+             <!--type="number"-->
+             <!--placeholder-class="defaultClass"/>-->
+      <!--<view>获取验证码</view>-->
+    <!--</view>-->
+    <view class="chooseSex">
+      <view class="head_icon" bindtap="selectGender" data-sex="2">
+        <image src="../../images/girl_icon.png" wx:if="{{isSelectGirl}}"></image>
+        <image src="../../images/girl_iconed.png" wx:else="{{!isSelectGirl}}"></image>
+        <text>女生</text>
+      </view>
+      <view class="head_icon" bindtap="selectGender" data-sex="1">
+        <image src="../../images/boy_iconed.png" wx:if="{{!isSelectGirl}}"></image>
+        <image src="../../images/boy_icon.png" wx:else="{{isSelectGirl}}"></image>
+        <text>男生</text>
+      </view>
+    </view>
+    <view class="attention">
+      <text>注册成功后，性别不可修改</text>
+    </view>
+  </view>
+  <view class="operate">
+    <view class="button" bindtap="nextStpe">下一步</view>
+  </view>
+  <view class="dialog" wx:if="{{status}}"></view>
+  <view class="privacyPolicy" wx:if="{{status}}">
+    <view class="title">玖恋隐私权政策</view>
+    <view class="detail">玖恋公司非常重视您的个人信息保护，并会尽全力保护您的个人信息。本政策适用于玖恋公司基于玖恋产品所提供的服务，请您在使用玖恋产品服务前，仔细阅读并了解本《隐私权政策》。本政策包含以下内容：</view>
+    <view class="detail">1.我们如何收集和使用您的个人信息</view>
+    <view class="detail">2.我们如何使用cookie和同类技术</view>
+    <view class="detail">3.我们如何共享、转让、公开披露您的个人信息</view>
+    <view class="detail">4.我们如何保存及保护您的个人信息</view>
+    <view class="detail">5.您的权利</view>
+    <view class="detail">6.我们如何处理未成年的个人信息</view>
+    <view class="operateMain">
+      <view class="disagree" bindtap="clickCancel">不同意</view>
+      <view class="agree" bindtap="clickAgree">同意</view>
+    </view>
+  </view>
+</view>

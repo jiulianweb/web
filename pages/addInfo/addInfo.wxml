@@ -1,0 +1,57 @@
+<view class="content">
+  <view class="title">
+    <text>添加信息</text>
+  </view>
+  <view class="information">
+    <view class="item"
+    wx:for="{{tagArr}}"
+    wx:for-index="indexs"
+    wx:for-item="items"
+    wx:key="items">
+      <view class="name">
+        <view class="point"></view>
+        <text>{{items.tag_type_name}}</text>
+      </view>
+      <view class="class">
+      <!--选中添加class clickItem-->
+        <view 
+        wx:for="{{items.tags}}"
+        wx:for-index="index"
+        wx:for-item="item"
+        wx:key="item"
+        class="{{item.checked ? 'clickItem' : ''}}" 
+        data-tagname="{{items.tag_type_name}}"
+        data-index="{{index}}"
+        data-select="{{item.tag_name}}" 
+        bindtap="character">{{item.tag_name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="form">
+    <view class="label">
+      <text>期望的他/她</text>
+    </view>
+    <view>
+      <input type="text"
+      value="{{hopeto}}"
+      data-type="hopeto" 
+      bindinput="bindKeyInput"
+      placeholder-class="defaultClass"/>
+    </view>
+    <view class="label mt10">
+      <text>最想对他/她说</text>
+    </view>
+    <view>
+      <input type="text"
+      value="{{wantsay}}"
+      bindinput="bindKeyInput"
+      data-type="wantsay"  
+      placeholder-class="defaultClass"/>
+    </view>
+  </view>
+  <view class="operate">
+    <view class="button"
+    bindtap="clickNext">下一步</view>
+  </view>
+</view>
+

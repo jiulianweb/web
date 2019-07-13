@@ -1,0 +1,96 @@
+<view class="userInfo">
+  <view class="userInfoIn">
+    <view class="marginAuto">
+      <view class="uploadImg">
+        <image 
+        wx:for="{{imgArr}}"
+        wx:for-item="item"
+        wx:key="item"
+        data-index="{{index}}"
+        src="{{item}}" 
+        bindtap="uploadImg"></image>
+      </view>
+      <view class="tips">不支持上传非人物照、裸露照片</view>
+      <view class="tips">错误图片点击重新上传即可</view>
+      <view class="baseInfo">基本资料</view>
+      <view class="infoBox">
+        <text>真实姓名</text>
+        <input 
+        placeholder="填写姓名" 
+        value="{{reqData.name}}"
+        type="text" 
+        bindinput="bindKeyInput"
+        data-type="name"
+        placeholder-class="defaultClass" />
+      </view>
+      <view class="infoBox">
+        <text>昵称</text>
+        <input 
+        placeholder="填写昵称" 
+        value="{{reqData.nickname}}"
+        bindinput="bindKeyInput"
+        data-type="nickname"
+        type="text" 
+        placeholder-class="defaultClass" />
+      </view>
+      <view class="infoBox">
+        <text>身高</text>
+        <input 
+        placeholder="填写身高" 
+        value="{{reqData.height}}"
+        bindinput="bindKeyInput"
+        data-type="height"
+        type="number" 
+        placeholder-class="defaultClass" />
+      </view>
+      <!-- <view class="infoBox">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            <text>学校</text>
+            <image class="select_icon" src="../../images/select_icon.png"></image>
+            <text class="school">{{array[index]}}</text>
+          </view>
+        </picker>
+      </view>
+      <view class="infoBox">
+        <text>专业</text>
+        <input placeholder="填写专业" 
+        type="text" placeholder-class="defaultClass" />
+      </view> -->
+      <view class="otherInfo">期望的他/她</view>
+      <view class="otherInput">
+        <input 
+        placeholder="请填写" 
+        bindinput="bindKeyInput"
+        value="{{reqData.hopeto}}"
+        data-type="hopeto"
+        maxlength="100"
+        type="text" 
+        placeholder-class="defaultClass" />
+      </view>
+      <view class="otherInfo">感情观</view>
+      <view class="otherInput">
+        <input 
+        placeholder="请填写" 
+        value="{{reqData.wantsay}}"
+        bindinput="bindKeyInput"
+        data-type="wantsay"
+        maxlength="100"
+        type="text" 
+        placeholder-class="defaultClass" />
+      </view>
+      <view class="otherInfo">关于我</view>
+      <view class="otherInput">
+        <input 
+        placeholder="请填写" 
+        value="{{reqData.aboutme}}"
+        bindinput="bindKeyInput"
+        data-type="aboutme"
+        maxlength="100"
+        type="text" 
+        placeholder-class="defaultClass" />
+      </view>
+      <view class="sbumit" bindtap="submit">提交</view>
+    </view>
+  </view>
+</view>
